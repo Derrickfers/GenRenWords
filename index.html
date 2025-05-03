@@ -230,21 +230,37 @@ border-bottom: #959596 2px solid;
 perspective: 800px;
 
 & .container2 h2, .container2 .animate-full, .container2 button {
-  transform: rotateY(90deg);
-  opacity: 0;
+    transform: rotateY(90deg);
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    -o-transform: rotateY(90deg);
+    opacity: 0;
 }
        
 & .container2 { 
             margin: 9rem 1rem;
             padding: 1rem 1rem;
             border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
             display: grid;
             align-self: center;
 
             & .start-rotate {
              transform: rotateY(0deg);
+             -webkit-transform: rotateY(0deg);
+             -moz-transform: rotateY(0deg);
+             -ms-transform: rotateY(0deg);
+             -o-transform: rotateY(0deg);
               opacity: 1;
               transition: transform 0.6s ease, opacity 0.6s ease;
+              -webkit-transition: transform 0.6s ease, opacity 0.6s ease;
+              -moz-transition: transform 0.6s ease, opacity 0.6s ease;
+              -ms-transition: transform 0.6s ease, opacity 0.6s ease;
+              -o-transition: transform 0.6s ease, opacity 0.6s ease;
             }
     & h2 {
         font-size: 4.1rem;
@@ -258,6 +274,10 @@ perspective: 800px;
         padding: 1.1rem 2.7rem;
         width: 45vw;
         border-radius: 5px;
+        -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
         border: none;
         box-shadow: 1px 1px 5px 2px #959596;
         margin-bottom: 0.3rem;
@@ -290,6 +310,10 @@ perspective: 800px;
                     margin-right: 1rem;
                     text-transform: uppercase;
                     border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                     -moz-border-radius: 5px;
+                     -ms-border-radius: 5px;
+                     -o-border-radius: 5px;
                     width: 7rem;
                     box-shadow: 1px 1px 5px 1px #959596;
                     &:hover {
@@ -556,9 +580,13 @@ perspective: 800px;
             & .container3 {
                
             margin: 0rem 0.7rem;
-            padding: 1rem 0.5rem;
-            padding-bottom: 2rem;
+            padding: 2rem 0.5rem;
+            padding-bottom: 3rem;
             border-radius: 5px;
+                -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
             display: grid;
             gap: 0rem;
             grid-template-columns: repeat(1, 1fr);
@@ -692,75 +720,29 @@ perspective: 800px;
             }
         }
 
-        .search-word {
-display: flex;
-justify-content: start;
-z-index: 9999;
-background-color: aliceblue;
-border-top: #959596 2px solid;
-border-bottom: #959596 2px solid;
-& .container2 {
-     
+        .search-word { 
+& .container2 { 
             margin: 7rem 1rem;
-            padding: 1rem 0.5rem;
-            border-radius: 5px;
-            display: grid;
-            align-self: center;
+            padding: 1rem 0.5rem; 
     & h2 {
-        font-size: 3.5rem;
-        color: #20455e;
-        letter-spacing: 5px;
-        margin: 1.3rem 0;
-        font-family: Pacifica Condensed;
-
+        font-size: 3.5rem; 
     }
-    input {
-        padding: 1.1rem 2.7rem;
-        width: 81vw;
-        border-radius: 5px;
-        border: none;
-        box-shadow: 1px 1px 5px 2px #959596;
-        margin-bottom: 0.3rem;
-         color: #202632;
-         font-size: 1rem;
-         letter-spacing: 1px;
-        &::placeholder {
-            color: #959596;
-            font-size: 1rem;
-            text-transform: capitalize;
-            letter-spacing: 1px;
-        }
+    input { 
+        width: 81vw; 
+         
     }
-    .fa-solid {
-   position: absolute;
-   top: 27%;
-   left: 3%;
-   color: #959596;
-   font-size: 1.2rem;
-    }
-
-    & button {
-        border: none;
-                    font-size: 0.9rem;
-                    background-color: #3182b5;
-                    color: white;
-                    display: inline-block;
-                    padding: 0.9rem 0rem;
-                    margin: 0.5rem 0rem;
-                    margin-right: 1rem;
-                    text-transform: uppercase;
-                    border-radius: 5px;
-                    width: 7rem;
-                    box-shadow: 1px 1px 5px 1px #959596;
+    
+                & button { 
+                    margin: 0.5rem 0rem; 
                     &:hover {
                         background-color: #3182b5; 
                     }
                     &:active {
                         background-color: #5f99bd;  
                     }
-    }
-}
-        }
+                }
+ }
+ }
 
         .btn-referesh--div {  
                     & .btn-referesh {          
